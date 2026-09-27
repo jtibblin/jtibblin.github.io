@@ -4,7 +4,7 @@
 cv_pdf: /assets/pdf/example_pdf.pdf # path to your CV PDF file
 email: julia.tibblin@univ-amu.fr # your email address
 research_gate_profile: JuliaTibblin
-rss_icon: false # comment this line to hide the RSS icon
+# rss_icon: false # comment this line to hide the RSS icon
 scholar_userid: quayNSUAAAAJ # your Google Scholar ID
 orcid_id: 0000-0001-5029-6485 # orcid
 linkedin_username: julia-tibblin-29ab148b
