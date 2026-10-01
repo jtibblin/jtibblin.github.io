@@ -209,7 +209,7 @@ collections:
   teachings:
     output: true
   talks:
-    output: true
+    output: false
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
