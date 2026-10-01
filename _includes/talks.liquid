@@ -1,0 +1,28 @@
+{% assign talks_by_year = site.talks | group_by: "year" | sort: "name" | reverse %}
+
+{% for year in talks_by_year %}
+<h3 class="year">{{ year.name }}</h3>
+<ul class="post-list">
+  {% assign items = year.items | sort: "date" | reverse %}
+  {% for talk in items %}
+  <li>
+    <h5>{{ talk.title }}</h5>
+    <p class="text-muted">
+      {{ talk.location }} · {{ talk.date | date: "%-d %b %Y" }}
+      {% for ref in talk.references %}
+        {% for material in ref.materials %}
+          · <a href="{{ material.url | relative_url }}" target="_blank" rel="noopener">{{ material.name }}</a>
+        {% endfor %}
+      {% endfor %}
+    </p>
+    {% assign abstract = talk.content | strip %}
+    {% if abstract != "" %}
+    <details>
+      <summary>abstract</summary>
+      {{ talk.content | markdownify }}
+    </details>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}
