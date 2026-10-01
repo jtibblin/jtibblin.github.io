@@ -1,5 +1,5 @@
 ---
-title: French for Engineers: Language, Culture and Society
+title: French for Engineers - Language, Culture and Society
 term: Spring 2021
 date: 2021-02-01
 institution: Lund University
