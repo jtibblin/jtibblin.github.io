@@ -14,10 +14,6 @@ cv:
     - network: LinkedIn
       username: example
 
-  address:
-    street: 2712 Broadway St
-@@ -23,167 +21,44 @@ cv:
-
   sections:
     Education:
       - institution: University of Zurich
